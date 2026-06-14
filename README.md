@@ -7,7 +7,7 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.1+-ee4c2c.svg)](https://pytorch.org/)
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Transformers-yellow)](https://huggingface.co/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://pharmasentinel.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://pharmasentinel-mfma8sjxgfjdv9appp9iegu.streamlit.app)
 
 > **PharmaSentinel** is an original research framework that jointly trains a clinical NLP model on four drug-review tasks — sentiment, condition classification, drug rating regression, and review helpfulness — while providing token-level explanations via Integrated Gradients and calibrated uncertainty via Monte Carlo Dropout.
 

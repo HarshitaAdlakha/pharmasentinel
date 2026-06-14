@@ -76,10 +76,7 @@ st.markdown(
 
 # ── Sidebar navigation ────────────────────────────────────────────────────────
 with st.sidebar:
-    st.image(
-        "https://raw.githubusercontent.com/HarshitaAdlakha/pharmasentinel/main/assets/logo.png",
-        use_column_width=True,
-    ) if False else st.markdown("## 💊 PharmaSentinel")
+    st.markdown("## 💊 PharmaSentinel")
 
     st.markdown("---")
     selected = option_menu(

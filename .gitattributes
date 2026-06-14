@@ -1,0 +1,10 @@
+# Normalise line endings to LF for all text files
+* text=auto eol=lf
+
+# Force binary for notebooks (avoid merge conflicts on metadata)
+*.ipynb -text
+
+# Force binary for model weights
+*.pt binary
+*.bin binary
+*.safetensors binary

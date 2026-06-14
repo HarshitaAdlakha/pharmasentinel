@@ -1,0 +1,39 @@
+# PharmaSentinel Model Configuration
+# All checkpoint names are HuggingFace model identifiers.
+
+# ── Shared encoder ──────────────────────────────────────────────────────────
+encoder:
+  checkpoint: "distilbert-base-uncased"       # swap for Bio_ClinicalBERT etc.
+  projection_dim: 256
+  dropout: 0.3
+
+# ── Task heads ───────────────────────────────────────────────────────────────
+tasks:
+  num_conditions: 51       # set automatically from data; override if needed
+  num_sentiments: 3        # Negative / Neutral / Positive
+
+# ── Loss weights ──────────────────────────────────────────────────────────────
+loss_weights:
+  rating:    0.3
+  sentiment: 1.0
+  condition: 1.0
+  helpful:   0.2
+
+# ── Inference ────────────────────────────────────────────────────────────────
+inference:
+  max_length: 256
+  mc_dropout_samples: 30
+
+# ── Explainability ───────────────────────────────────────────────────────────
+explainability:
+  ig_steps: 50
+  top_k_tokens: 10
+
+# ── Checkpoints ──────────────────────────────────────────────────────────────
+checkpoints:
+  # Benchmarked models (comment in/out as needed)
+  distilbert:    "distilbert-base-uncased"
+  bert:          "bert-base-uncased"
+  bio_clinical:  "emilyalsentzer/Bio_ClinicalBERT"
+  biobert:       "dmis-lab/biobert-base-cased-v1.2"
+  pubmedbert:    "microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext"

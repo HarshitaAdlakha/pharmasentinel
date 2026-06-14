@@ -1,0 +1,31 @@
+# PharmaSentinel Training Configuration
+
+data:
+  train_path: "data/drugsComTrain_raw.tsv"
+  test_path:  "data/drugsComTest_raw.tsv"
+  top_k_conditions: 50
+  min_review_len: 10
+  val_size: 0.10
+  test_size: 0.10
+  random_state: 42
+
+training:
+  epochs: 10
+  batch_size: 32
+  learning_rate: 2.0e-5
+  weight_decay: 0.01
+  warmup_steps: 500
+  max_grad_norm: 1.0
+  grad_accumulation_steps: 4
+  early_stopping_patience: 5
+  seed: 42
+
+tokenizer:
+  max_length: 256
+  padding: "max_length"
+  truncation: true
+
+output:
+  checkpoint_dir: "checkpoints/"
+  results_dir: "results/"
+  log_file: "logs/training.log"

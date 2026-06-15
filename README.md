@@ -427,7 +427,6 @@ This work builds on the following seminal papers:
 
 - **Dataset**: UCI Machine Learning Repository / Kaggle — UCI Drug Review Dataset (Graber & Graber, 2018)
 - **Transformers**: HuggingFace team
-- **Amazon ML Summer Program 2024** — this project was developed as a portfolio entry
 
 ---
 
@@ -436,3 +435,4 @@ This work builds on the following seminal papers:
 This project is released under the [MIT License](LICENSE).
 
 The UCI Drug Review Dataset is released under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+*Built by Harshita Adlakha*
